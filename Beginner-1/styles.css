@@ -1,0 +1,119 @@
+:root{
+    /* setting custom properties */
+
+    /* colors */
+    --clr-primary-300: #F3EED9;
+    --clr-primary-400: #824936;
+
+    --clr-neutrak-100: #FFF;
+    --clr-neutral-900: #222C2A;
+
+    /* font-famil */
+    --ff-primary:'Roboto',sans-serif;
+    --ff-accent: 'Playfair Display',serif;
+}
+
+
+/* setting up box-sizing for page */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-weight: 300;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+}
+
+/* utility classes */
+.container {
+    margin-inline: auto;
+    /* 90% of screen size in small screens and 70.5 rem mak size */
+    width: min(90%,70.5rem); 
+
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+/* use min-width with em */
+@media (min-width: 40em) {
+    .split{
+        flex-direction: row;
+    }
+
+    /* for equal columns */
+    .split > * {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 40em) {
+    header,
+    section{
+        padding: 7rem 0;
+    }
+}
+
+.container--narrow {
+    /* sets max width of an element */
+    max-width: 34 rem; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* setting margin to 0 */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h2,
+h3,
+p{
+    margin-bottom: 1em;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--clr-primary-400);
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+}
+
+header,
+section {
+    padding: 3rem 0;
+}
+
+.bg-light {background-color: var(--clr-primary-300);}
+.bg-primary {
+    color: var(--clr-neutrak-100);
+    background-color: var(--clr-primary-400);}
+.bg-dark {
+    color: var(--clr-neutrak-100);
+    background-color: var(--clr-neutral-900);}
+
+.bg-primary h2,
+.bg-dark h2 {
+    color: var(--clr-primary-300);
+}
