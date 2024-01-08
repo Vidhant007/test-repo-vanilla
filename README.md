@@ -3,3 +3,4 @@
 
 
 DAY-1 : Using Percentage and Avoiding heights
+DAY-2 : Getting Familiar with relative Units
