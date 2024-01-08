@@ -1,0 +1,38 @@
+* { box-sizing: border-box;}
+
+
+body {
+    margin : 0;
+}
+
+.parent {
+    background-color: blue;
+    padding: 2em;
+    /* width: 900px; */
+    /* instead of fixed values use percentage. */
+    width: 80%;
+    /* this is because things are already responsive, the problem aries when we provide fixed lengths */
+    margin: 0 auto;
+}
+
+/* percentage on a child */
+.child {
+    background-color:aqua ;
+    /* if a child has a bigger width than a parent it will overflow */
+    width: 50%; /*always 50% of the parent*/
+
+    /* try to avoid heights as they take away the responsiveness instead use padding */
+    height: 250px;
+}
+
+.container {
+    background: red;
+    color: white;
+
+    width: 80%;
+    margin: 0 auto;
+
+    /* height: 300px; */
+    /* instead of  height use padding */
+    padding : 5em;
+}
