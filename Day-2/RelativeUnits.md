@@ -1,6 +1,9 @@
 % -> Relative to parent element's value property
-em -> Relative to current font-size of the element
+em -> Relative to current font-size of the parent (Don't use for font size because of compouding)
 rem -> Relative to font size of the root element typically html tag or by default broser defaults
+
+
+AGAIN :::::: Don't use em for setting fon't size because for compounding
 
 rem :  It allows for consistent sizing relative to the base font size.
 ex :
