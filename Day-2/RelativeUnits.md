@@ -3,7 +3,7 @@ em -> Relative to current font-size of the parent (Don't use for font size becau
 rem -> Relative to font size of the root element typically html tag or by default broser defaults
 
 
-AGAIN :::::: Don't use em for setting fon't size because for compounding
+AGAIN :::::: Don't use em for setting fon't size because of compounding
 
 rem :  It allows for consistent sizing relative to the base font size.
 ex :
